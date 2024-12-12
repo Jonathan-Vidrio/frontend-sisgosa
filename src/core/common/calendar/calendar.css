@@ -1,0 +1,49 @@
+.calendar {
+  display: inline-block;
+  font-family: Arial, sans-serif;
+}
+
+.calendar-header,
+.calendar-row {
+  display: flex;
+}
+
+.calendar-header div,
+.calendar-cell {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.calendar-header div {
+  font-weight: bold;
+}
+
+.calendar-cell {
+  cursor: pointer;
+  margin: 2px;
+}
+
+.calendar-cell.empty {
+  background-color: #f9f9f9;
+  cursor: default;
+}
+
+.calendar-cell.disabled {
+  color: #ccc;
+  cursor: default;
+}
+
+.calendar-cell.available:hover {
+  background-color: #e6f7ff;
+}
+
+.calendar-cell.available {
+  background-color: #f0faff;
+}
+
+.calendar-cell.selected {
+  background-color: #1890ff;
+  color: white;
+}

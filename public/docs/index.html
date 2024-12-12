@@ -1,0 +1,82 @@
+<!DOCTYPE html><html class="default" lang="en" data-base="."><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>frontend</title><meta name="description" content="Documentation for frontend"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script defer src="assets/main.js"></script><script async src="assets/icons.js" id="tsd-icons-script"></script><script async src="assets/search.js" id="tsd-search-script"></script><script async src="assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar"><div class="tsd-toolbar-contents container"><div class="table-cell" id="tsd-search"><div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="assets/icons.svg#icon-search"></use></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div><div class="field"><div id="tsd-toolbar-links"></div></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">frontend</a></div><div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget tsd-toolbar-icon menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="assets/icons.svg#icon-menu"></use></svg></a></div></div></header><div class="container container-main"><div class="col-content"><div class="tsd-page-title"><h1>frontend</h1></div><div class="tsd-panel tsd-typography"><a id="frontend-sistema-de-gestión-de-servicios-automotrices-sisgosa" class="tsd-anchor"></a><h1 class="tsd-anchor-link">Frontend Sistema de Gestión de Servicios Automotrices (SISGOSA)<a href="#frontend-sistema-de-gestión-de-servicios-automotrices-sisgosa" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h1><p>This project is a web application built with Next.js, leveraging Firebase for storage, and consuming an API. It is designed to provide a fast and interactive user experience.</p>
+<hr>
+<a id="installation" class="tsd-anchor"></a><h2 class="tsd-anchor-link">Installation<a href="#installation" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><ol>
+<li>
+<p>Clone this repository:</p>
+<pre><code class="bash"><span class="hl-0">git</span><span class="hl-1"> </span><span class="hl-2">clone</span><span class="hl-1"> </span><span class="hl-2">https://github.com/Jonathan-Vidrio/frontend-sisgosa.git</span>
+</code><button type="button">Copy</button></pre>
+
+</li>
+<li>
+<p>Navigate to the project directory:</p>
+<pre><code class="bash"><span class="hl-0">cd</span><span class="hl-1"> </span><span class="hl-2">frontend-sisgosa</span>
+</code><button type="button">Copy</button></pre>
+
+</li>
+<li>
+<p>Install the dependencies:</p>
+<pre><code class="bash"><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-2">install</span>
+</code><button type="button">Copy</button></pre>
+
+</li>
+<li>
+<p>Configure environment variables:
+Create a <code>.env.local</code> file and add the following keys:</p>
+<pre><code><span class="hl-1"># </span><span class="hl-3">API</span><br/><span class="hl-3">HOST_URL</span><span class="hl-1">=</span><span class="hl-4">http</span><span class="hl-1">:</span><span class="hl-5">//&lt;API_HOST&gt;:&lt;API_PORT&gt;/api/v1</span><br/><span class="hl-1"># </span><span class="hl-3">PRIVATE_KEY</span><span class="hl-1"> </span><span class="hl-6">used</span><span class="hl-1"> </span><span class="hl-6">for</span><span class="hl-1"> </span><span class="hl-6">encryption</span><span class="hl-1"> </span><span class="hl-6">operations</span><br/><span class="hl-3">PRIVATE_KEY</span><span class="hl-1">=</span><span class="hl-6">some_private_key</span><br/><br/><span class="hl-1"># </span><span class="hl-6">Firebase</span><br/><span class="hl-3">API_KEY</span><span class="hl-1">=</span><span class="hl-6">some_api_key</span><br/><span class="hl-3">AUTH_DOMAIN</span><span class="hl-1">=</span><span class="hl-6">some_auth_domain</span><br/><span class="hl-3">PROJECT_ID</span><span class="hl-1">=</span><span class="hl-6">some_project_id</span><br/><span class="hl-3">STORAGE_BUCKET</span><span class="hl-1">=</span><span class="hl-6">some_storage_bucket</span><br/><span class="hl-3">MESSAGING_SENDER_ID</span><span class="hl-1">=</span><span class="hl-6">some_messaging_sender_id</span><br/><span class="hl-3">APP_ID</span><span class="hl-1">=</span><span class="hl-6">some_app_id</span>
+</code><button>Copy</button></pre>
+
+</li>
+</ol>
+<hr>
+<a id="usage" class="tsd-anchor"></a><h2 class="tsd-anchor-link">Usage<a href="#usage" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><ul>
+<li>
+<p><strong>Development mode</strong>:</p>
+<pre><code class="bash"><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-2">run</span><span class="hl-1"> </span><span class="hl-2">dev</span>
+</code><button type="button">Copy</button></pre>
+
+<p>Open <a href="http://localhost:3030" target="_blank" class="external">http://localhost:3000</a> in your browser to see the application.</p>
+</li>
+<li>
+<p><strong>Build for production</strong>:</p>
+<pre><code class="bash"><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-2">run</span><span class="hl-1"> </span><span class="hl-2">build</span>
+</code><button type="button">Copy</button></pre>
+
+</li>
+<li>
+<p><strong>Run the application in production</strong>:</p>
+<pre><code class="bash"><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-2">start</span>
+</code><button type="button">Copy</button></pre>
+
+</li>
+</ul>
+<hr>
+<a id="available-scripts" class="tsd-anchor"></a><h2 class="tsd-anchor-link">Available Scripts<a href="#available-scripts" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><ul>
+<li><code>dev</code>: Runs the server in development mode.</li>
+<li><code>build</code>: Builds the application for production.</li>
+<li><code>start</code>: Runs the compiled application in production mode.</li>
+<li><code>lint</code>: Lints the code using ESLint.</li>
+<li><code>format</code>: Formats the code using Prettier.</li>
+<li><code>docs</code>: Generates documentation using Typedoc.</li>
+</ul>
+<hr>
+<a id="main-dependencies" class="tsd-anchor"></a><h2 class="tsd-anchor-link">Main Dependencies<a href="#main-dependencies" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><ul>
+<li><strong>Framework</strong>: <a href="https://nextjs.org/" target="_blank" class="external">Next.js</a> (v15.0.3)</li>
+<li><strong>React Libraries</strong>: React (v19.0.0) and React DOM (v19.0.0)</li>
+<li><strong>Form Management</strong>: <a href="https://react-hook-form.com/" target="_blank" class="external">React Hook Form</a> and <a href="https://zod.dev/" target="_blank" class="external">Zod</a></li>
+<li><strong>Firebase</strong>: For storage.</li>
+<li><strong>UUID</strong>: For generating unique identifiers.</li>
+<li><strong>State Management</strong>: <a href="https://zustand-demo.pmnd.rs/" target="_blank" class="external">Zustand</a>.</li>
+<li><strong>Encryption</strong>: <a href="https://github.com/panva/jose" target="_blank" class="external">Jose</a>.</li>
+</ul>
+<hr>
+<a id="styles" class="tsd-anchor"></a><h2 class="tsd-anchor-link">Styles<a href="#styles" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><p>This project uses <a href="https://tailwindcss.com/" target="_blank" class="external">Tailwind CSS</a> for rapid and flexible styling configuration.</p>
+<hr>
+<a id="documentation" class="tsd-anchor"></a><h2 class="tsd-anchor-link">Documentation<a href="#documentation" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><p>The project documentation is auto-generated using <strong>TypeDoc</strong>. To generate the documentation, run:</p>
+<pre><code><span class="hl-6">npm</span><span class="hl-1"> </span><span class="hl-6">run</span><span class="hl-1"> </span><span class="hl-6">docs</span><br/><br/><span class="hl-1">-- </span><span class="hl-6">launch</span><span class="hl-1"> </span><span class="hl-6">the</span><span class="hl-1"> </span><span class="hl-6">server</span><span class="hl-1"> </span><span class="hl-7">in</span><span class="hl-1"> </span><span class="hl-6">development</span><span class="hl-1"> </span><span class="hl-6">mode</span><br/><span class="hl-6">npm</span><span class="hl-1"> </span><span class="hl-6">run</span><span class="hl-1"> </span><span class="hl-6">dev</span>
+</code><button>Copy</button></pre>
+
+<p>The generated documentation will be available in the <code>docs</code> directory.</p>
+<pre><code><span class="hl-4">http</span><span class="hl-1">:</span><span class="hl-5">//localhost:3030/docs</span>
+</code><button>Copy</button></pre>
+
+</div></div><div class="col-sidebar"><div class="page-menu"><div class="tsd-navigation settings"><details class="tsd-accordion"><summary class="tsd-accordion-summary"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="assets/icons.svg#icon-chevronDown"></use></svg>Settings</h3></summary><div class="tsd-accordion-details"><div class="tsd-filter-visibility"><span class="settings-label">Member Visibility</span><ul id="tsd-filter-options"><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div><div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div><details open class="tsd-accordion tsd-page-navigation"><summary class="tsd-accordion-summary"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="assets/icons.svg#icon-chevronDown"></use></svg>On This Page</h3></summary><div class="tsd-accordion-details"><a href="#frontend-sistema-de-gestión-de-servicios-automotrices-sisgosa"><span>Frontend <wbr/>Sistema de <wbr/>Gestión de <wbr/>Servicios <wbr/>Automotrices (SISGOSA)</span></a><ul><li><a href="#installation"><span>Installation</span></a></li><li><a href="#usage"><span>Usage</span></a></li><li><a href="#available-scripts"><span>Available <wbr/>Scripts</span></a></li><li><a href="#main-dependencies"><span>Main <wbr/>Dependencies</span></a></li><li><a href="#styles"><span>Styles</span></a></li><li><a href="#documentation"><span>Documentation</span></a></li></ul></div></details></div><div class="site-menu"><nav class="tsd-navigation"><a href="modules.html">frontend</a><ul class="tsd-small-nested-navigation" id="tsd-nav-container"><li>Loading...</li></ul></nav></div></div></div><footer><p class="tsd-generator">Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></footer><div class="overlay"></div></body></html>
